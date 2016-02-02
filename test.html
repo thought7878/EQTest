@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="cleartype" content="on">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>情商测试</title>
+    <link rel="stylesheet" type="text/css" href="./单词量测试_files/shanbay-fontawesome-v3.css">
+    <link href="./单词量测试_files/shanbay_base.1c92eccdefe5105f84aaee288774119b.css" rel="stylesheet" type="text/css">
+    <link href="old-style.css" rel="stylesheet" type="text/css">
+    <!-- 我的 -->
+    <link rel="stylesheet" type="text/css" href="test.css">
+
+    <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <style id="style-1-cropbar-clipper">
+    .en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+    }
+    .en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+    }
+    </style>
+</head>
+<body>
+    <!-- 开始答题 -->
+    <div class="begin-test-container">
+        <div class="test-tips">
+            来测测你的情商吧！
+        </div>
+        <div class="begin-test-btn">
+            开始
+        </div>
+    </div>
+    <div class="test-container">
+        <!-- 进度 -->
+        <div class="progress">
+            <div class="bar bar-success" id="correct" style="width: 9%;">4</div>
+            <div class="bar bar-danger" id="wrong" style="width: 8%;">4</div>
+            <div class="bar bar-undo" id="words-count" style="width: 83%;">41</div>
+        </div>
+        <!-- 问题列表 -->
+        <div id="question-list">
+            <div class="question-item test-show definition" style="display:block;opacity:1;transform:translateY(0);" data-index="1" data-done="false">
+                <div class="word-name"> atmosphere </div>
+                
+                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                    <span class="list">1.</span>
+                    <span class="value"> n. 权益，产权，(无固定利息的)股票</span>
+                    <span class="hide"> n. 权益，产权，(无固定利息的)股票</span>
+                </label>
+                
+                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                    <span class="list">2.</span>
+                    <span class="value"> adj. 文献的</span>
+                    <span class="hide"> adj. 文献的</span>
+                </label>
+                
+                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                    <span class="list">3.</span>
+                    <span class="value"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                    <span class="hide"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                </label>
+                
+                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 把握,抓紧,领会 </span>
+                    <span class="hide"> n. 把握,抓紧,领会 </span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-9" value="0" rank="1623" answer="1050">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item hide definition" data-index="2" data-done="false">
+                <div class="word-name"> atmosphere </div>
+                
+                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                    <span class="list">1.</span>
+                    <span class="value"> n. 权益，产权，(无固定利息的)股票</span>
+                    <span class="hide"> n. 权益，产权，(无固定利息的)股票</span>
+                </label>
+                
+                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                    <span class="list">2.</span>
+                    <span class="value"> adj. 文献的</span>
+                    <span class="hide"> adj. 文献的</span>
+                </label>
+                
+                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                    <span class="list">3.</span>
+                    <span class="value"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                    <span class="hide"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                </label>
+                
+                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 把握,抓紧,领会 </span>
+                    <span class="hide"> n. 把握,抓紧,领会 </span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-9" value="0" rank="1623" answer="1050">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item definition hide" data-index="3" data-done="false">
+                <div class="word-name"> channel </div>
+                
+                <label class="answer-item word" value="26340" rank="1844" answer="1563">
+                    <span class="list">1.</span>
+                    <span class="value"> adj. 中途的, 不彻底的</span>
+                    <span class="hide"> adj. 中途的, 不彻底的</span>
+                </label>
+                
+                <label class="answer-item word" value="6893" rank="1844" answer="1563">
+                    <span class="list">2.</span>
+                    <span class="value"> n. 官僚制度, 官僚主义</span>
+                    <span class="hide"> n. 官僚制度, 官僚主义</span>
+                </label>
+                
+                <label class="answer-item word" value="11357" rank="1844" answer="1563">
+                    <span class="list">3.</span>
+                    <span class="value"> vt. 使晕倒,使惊吓</span>
+                    <span class="hide"> vt. 使晕倒,使惊吓</span>
+                </label>
+                
+                <label class="answer-item word" value="1563" rank="1844" answer="1563">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 通道,频道,海峡,方法</span>
+                    <span class="hide"> n. 通道,频道,海峡,方法</span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-10" value="0" rank="1844" answer="1563">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item hide definition" data-index="4" data-done="false">
+                <div class="word-name"> atmosphere </div>
+                
+                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                    <span class="list">1.</span>
+                    <span class="value"> n. 权益，产权，(无固定利息的)股票</span>
+                    <span class="hide"> n. 权益，产权，(无固定利息的)股票</span>
+                </label>
+                
+                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                    <span class="list">2.</span>
+                    <span class="value"> adj. 文献的</span>
+                    <span class="hide"> adj. 文献的</span>
+                </label>
+                
+                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                    <span class="list">3.</span>
+                    <span class="value"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                    <span class="hide"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                </label>
+                
+                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 把握,抓紧,领会 </span>
+                    <span class="hide"> n. 把握,抓紧,领会 </span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-9" value="0" rank="1623" answer="1050">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item definition hide" data-index="5" data-done="false">
+                <div class="word-name"> channel </div>
+                
+                <label class="answer-item word" value="26340" rank="1844" answer="1563">
+                    <span class="list">1.</span>
+                    <span class="value"> adj. 中途的, 不彻底的</span>
+                    <span class="hide"> adj. 中途的, 不彻底的</span>
+                </label>
+                
+                <label class="answer-item word" value="6893" rank="1844" answer="1563">
+                    <span class="list">2.</span>
+                    <span class="value"> n. 官僚制度, 官僚主义</span>
+                    <span class="hide"> n. 官僚制度, 官僚主义</span>
+                </label>
+                
+                <label class="answer-item word" value="11357" rank="1844" answer="1563">
+                    <span class="list">3.</span>
+                    <span class="value"> vt. 使晕倒,使惊吓</span>
+                    <span class="hide"> vt. 使晕倒,使惊吓</span>
+                </label>
+                
+                <label class="answer-item word" value="1563" rank="1844" answer="1563">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 通道,频道,海峡,方法</span>
+                    <span class="hide"> n. 通道,频道,海峡,方法</span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-10" value="0" rank="1844" answer="1563">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item hide definition" data-index="6" data-done="false">
+                <div class="word-name"> atmosphere </div>
+                
+                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                    <span class="list">1.</span>
+                    <span class="value"> n. 权益，产权，(无固定利息的)股票</span>
+                    <span class="hide"> n. 权益，产权，(无固定利息的)股票</span>
+                </label>
+                
+                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                    <span class="list">2.</span>
+                    <span class="value"> adj. 文献的</span>
+                    <span class="hide"> adj. 文献的</span>
+                </label>
+                
+                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                    <span class="list">3.</span>
+                    <span class="value"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                    <span class="hide"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                </label>
+                
+                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 把握,抓紧,领会 </span>
+                    <span class="hide"> n. 把握,抓紧,领会 </span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-9" value="0" rank="1623" answer="1050">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item definition hide" data-index="7" data-done="false">
+                <div class="word-name"> channel </div>
+                
+                <label class="answer-item word" value="26340" rank="1844" answer="1563">
+                    <span class="list">1.</span>
+                    <span class="value"> adj. 中途的, 不彻底的</span>
+                    <span class="hide"> adj. 中途的, 不彻底的</span>
+                </label>
+                
+                <label class="answer-item word" value="6893" rank="1844" answer="1563">
+                    <span class="list">2.</span>
+                    <span class="value"> n. 官僚制度, 官僚主义</span>
+                    <span class="hide"> n. 官僚制度, 官僚主义</span>
+                </label>
+                
+                <label class="answer-item word" value="11357" rank="1844" answer="1563">
+                    <span class="list">3.</span>
+                    <span class="value"> vt. 使晕倒,使惊吓</span>
+                    <span class="hide"> vt. 使晕倒,使惊吓</span>
+                </label>
+                
+                <label class="answer-item word" value="1563" rank="1844" answer="1563">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 通道,频道,海峡,方法</span>
+                    <span class="hide"> n. 通道,频道,海峡,方法</span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-10" value="0" rank="1844" answer="1563">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item hide definition" data-index="8" data-done="false">
+                <div class="word-name"> atmosphere </div>
+                
+                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                    <span class="list">1.</span>
+                    <span class="value"> n. 权益，产权，(无固定利息的)股票</span>
+                    <span class="hide"> n. 权益，产权，(无固定利息的)股票</span>
+                </label>
+                
+                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                    <span class="list">2.</span>
+                    <span class="value"> adj. 文献的</span>
+                    <span class="hide"> adj. 文献的</span>
+                </label>
+                
+                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                    <span class="list">3.</span>
+                    <span class="value"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                    <span class="hide"> n. 大气, 气氛，空气, 格调, 情趣, 气压</span>
+                </label>
+                
+                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 把握,抓紧,领会 </span>
+                    <span class="hide"> n. 把握,抓紧,领会 </span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-9" value="0" rank="1623" answer="1050">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+            <div class="question-item definition hide" data-index="9" data-done="false">
+                <div class="word-name"> channel </div>
+                
+                <label class="answer-item word" value="26340" rank="1844" answer="1563">
+                    <span class="list">1.</span>
+                    <span class="value"> adj. 中途的, 不彻底的</span>
+                    <span class="hide"> adj. 中途的, 不彻底的</span>
+                </label>
+                
+                <label class="answer-item word" value="6893" rank="1844" answer="1563">
+                    <span class="list">2.</span>
+                    <span class="value"> n. 官僚制度, 官僚主义</span>
+                    <span class="hide"> n. 官僚制度, 官僚主义</span>
+                </label>
+                
+                <label class="answer-item word" value="11357" rank="1844" answer="1563">
+                    <span class="list">3.</span>
+                    <span class="value"> vt. 使晕倒,使惊吓</span>
+                    <span class="hide"> vt. 使晕倒,使惊吓</span>
+                </label>
+                
+                <label class="answer-item word" value="1563" rank="1844" answer="1563">
+                    <span class="list">4.</span>
+                    <span class="value"> n. 通道,频道,海峡,方法</span>
+                    <span class="hide"> n. 通道,频道,海峡,方法</span>
+                </label>
+                
+                <label class="answer-item word give-up hide" id="give-up-10" value="0" rank="1844" answer="1563">
+                    <span class="list">5.</span>
+                    <span class="value">不认识</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
