@@ -93,7 +93,9 @@ body{
 .question-item{
 	opacity: 0;
     /*transform: translateY(-100%); */
-	transition: all .5s ease-in .1s ;
+    transition-property: all;
+    /*transition-timing-function: ease-in;*/
+    /*transition-delay:.1s;*/
 }
 /*动画样式*/
  .test-show{

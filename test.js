@@ -27,6 +27,9 @@ $(function() {
 		var nextQst$ = currentQst$.next();
 		var docHeight = $(document).height();
 		currentQst$.css({// 动画隐藏当前的问题
+			"transition-duration": "0.4s",
+			"transition-timing-function": "ease-in",
+			"transition-delay": "0.1s",
 			"opacity": "0",
 			"transform": "translateY(-" + docHeight + "px)"
 		}).data("done","true").attr("data-done","true");
@@ -36,9 +39,12 @@ $(function() {
 				"opacity": "1",
 				"transform": "translateY(0)"
 			});
-		}, 600);
+		}, 500);
 		// 准备显示下一题目
 		nextQst$.css({
+			"transition-duration": "0.2s",
+			"transition-timing-function": "ease-out",
+			"transition-delay": "0s",
 			"opacity": "0",
 			"display": "block",
 			"transform": "translateY(" + docHeight + "px)"
