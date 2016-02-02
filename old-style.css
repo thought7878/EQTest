@@ -1,0 +1,587 @@
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.splash {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+.splash .mask {
+  height: 100%;
+  width: 100%;
+  background: #209e85;
+  opacity: 1;
+}
+.splash .game-name {
+  top: 40px;
+  width: 100%;
+  font-size: 28px;
+  color: white;
+}
+.splash .start {
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+  border-radius: 50%;
+  background: white;
+  line-height: 200px;
+  font-size: 40px;
+  color: #209e85;
+}
+#quiz-process {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  box-shadow: 0 0 4px #aaa;
+  border-radius: 0;
+  z-index: 400;
+}
+#quiz-process .bar {
+  background-image: none;
+  box-shadow: none;
+}
+#quiz-process .bar-undo {
+  color: black;
+  background: white;
+  width: 100%;
+}
+#waiting-for-result {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 820px;
+}
+#waiting-for-result p {
+  margin-bottom: 20px;
+}
+#waiting-for-result img {
+  margin-bottom: 10px;
+}
+#watermark {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  width: 160px;
+  margin-left: -80px;
+  text-align: center;
+  z-index: -12;
+}
+.definition {
+  margin: 60px 20px 80px 20px;
+  word-wrap: break-word;
+  box-shadow: 0 0 4px #aaa;
+}
+.definition .word-name {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: #209e85;
+  border-bottom: 1px dotted #209e85;
+  line-height: 40px;
+}
+.definition label {
+  margin-bottom: 0;
+}
+.definition .word {
+  background: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-bottom: 1px dotted silver;
+  line-height: 28px;
+}
+.definition .word .list {
+  font-size: 14px;
+  color: silver;
+}
+.definition .word .value {
+  color: #888583;
+}
+.definition .word:last-of-type {
+  border: none;
+}
+.give-up {
+  color: gray;
+}
+.download-section {
+  position: fixed;
+  border: 1px solid #ccc;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  background: white;
+}
+.download-section a {
+  font-size: 16px;
+  color: gray;
+}
+.download-section a i {
+  font-size: 18px;
+}
+#promotion-container {
+  margin: 0px 20px;
+  text-align: center;
+}
+#promotion-container a {
+  color: #209e85;
+}
+#promotion-container p {
+  text-align: center;
+  color: #209E85;
+}
+#promotion-container #promote-download-link {
+  width: 40%;
+  float: left;
+  padding-right: 20px;
+  border-right: 1px dotted #ccc;
+  padding-left: 5px;
+}
+#promotion-container #promote-wechat-account {
+  width: 40%;
+  float: left;
+  padding-left: 15px;
+}
+#score-container {
+  background: white;
+  margin: 10px 20px;
+  box-shadow: 0 0 4px #aaa;
+  text-align: center;
+}
+#score-container #score-value-container {
+  background: #209e85;
+  /* ie */
+  background: -webkit-radial-gradient(top, #51b884, #209e85);
+  text-align: center;
+  padding: 40px 0px;
+  color: white;
+}
+#score-container #score-value-container #score-value {
+  font-size: 80px;
+  line-height: 80px;
+}
+#score-container #comment {
+  text-align: center;
+  min-height: 80px;
+  padding: 20px 20px 0px 20px;
+  font-size: 22px;
+  line-height: 26px;
+}
+#score-container #remarks {
+  font-size: 14px;
+  color: gray;
+  padding: 10px 20px 20px 20px;
+}
+#score-container #share {
+  padding: 6px 0px;
+  box-shadow: 0px -2px 4px #cccccc;
+  color: #51b884;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+#score-container #share img {
+  width: 40px;
+}
+#share-guide {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: 500;
+}
+#share-guide #share-mask {
+  height: 100%;
+  min-height: 400px;
+  width: 100%;
+  background: black;
+  opacity: 0.8;
+}
+#share-guide .arrow {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100px;
+}
+#share-guide #share-mark {
+  position: absolute;
+  top: 100px;
+  right: 80px;
+  width: 160px;
+}
+#promote-link {
+  text-align: center;
+  margin: 20px;
+}
+.ipad .splash .game-name {
+  top: 80px;
+  font-size: 38px;
+}
+.ipad .splash .start {
+  width: 400px;
+  height: 400px;
+  margin: -200px 0 0 -200px;
+  line-height: 400px;
+  font-size: 80px;
+}
+.ipad #quiz-process {
+  top: 40px;
+  height: 40px;
+  margin: 0 30px;
+  box-shadow: 0 0 6px #aaa;
+}
+.ipad #quiz-process .bar {
+  line-height: 40px;
+  font-size: 18px;
+}
+.ipad #waiting-for-result {
+  font-size: 26px;
+  padding-top: 1640px;
+}
+.ipad #waiting-for-result p {
+  margin-bottom: 40px;
+}
+.ipad #waiting-for-result img {
+  margin-bottom: 20px;
+}
+.ipad #watermark {
+  top: 220px;
+  left: 50%;
+  width: 260px;
+  margin-left: -130px;
+}
+.ipad .definition {
+  margin: 120px 50px 160px;
+}
+.ipad .definition .word-name {
+  padding: 20px;
+  font-size: 60px;
+  line-height: 120px;
+}
+.ipad .definition label {
+  margin-bottom: 0;
+}
+.ipad .definition .word {
+  padding: 18px 40px;
+  font-size: 32px;
+  line-height: 48px;
+}
+.ipad .definition .word .list {
+  font-size: 24px;
+}
+.ipad .download-section {
+  left: 50px;
+  right: 50px;
+  bottom: 50px;
+  padding: 16px 20px;
+}
+.ipad .download-section a {
+  font-size: 24px;
+}
+.ipad .download-section a i {
+  font-size: 24px;
+}
+.ipad #promotion-container {
+  font-size: 24px;
+}
+.ipad #promotion-container img {
+  width: 80px;
+}
+.ipad #promotion-container #promote-download-link {
+  width: 45%;
+  float: left;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.ipad #promotion-container #promote-wechat-account {
+  width: 45%;
+  padding-left: 30px;
+}
+.ipad #score-container {
+  margin: 20px;
+}
+.ipad #score-container #score-value-container {
+  padding: 80px 0px;
+}
+.ipad #score-container #score-value-container .title {
+  font-size: 32px;
+}
+.ipad #score-container #score-value-container #score-value {
+  font-size: 160px;
+  line-height: 1em;
+}
+.ipad #score-container #comment {
+  min-height: 160px;
+  padding: 40px 0px;
+  font-size: 32px;
+  line-height: 26px;
+}
+.ipad #score-container #remarks {
+  font-size: 24px;
+}
+.ipad #score-container #share {
+  padding: 12px 0px;
+  font-size: 32px;
+}
+.ipad #score-container #share img {
+  width: 50px;
+}
+.ipad #promote-link {
+  text-align: center;
+  margin: 20px;
+}
+/* iPad Tablet landscape three-col-right */
+@media only screen and (width: 1024px) {
+  .splash .game-name {
+    top: 80px;
+    font-size: 38px;
+  }
+  .splash .start {
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    line-height: 400px;
+    font-size: 80px;
+  }
+  #quiz-process {
+    top: 40px;
+    height: 40px;
+    margin: 0 30px;
+    box-shadow: 0 0 6px #aaa;
+  }
+  #quiz-process .bar {
+    line-height: 40px;
+    font-size: 18px;
+  }
+  #waiting-for-result {
+    font-size: 26px;
+    padding-top: 1640px;
+  }
+  #waiting-for-result p {
+    margin-bottom: 40px;
+  }
+  #waiting-for-result img {
+    margin-bottom: 20px;
+  }
+  #watermark {
+    top: 220px;
+    left: 50%;
+    width: 260px;
+    margin-left: -130px;
+  }
+  .definition {
+    margin: 120px 50px 160px;
+  }
+  .definition .word-name {
+    padding: 20px;
+    font-size: 60px;
+    line-height: 120px;
+  }
+  .definition label {
+    margin-bottom: 0;
+  }
+  .definition .word {
+    padding: 18px 40px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .definition .word .list {
+    font-size: 24px;
+  }
+  .download-section {
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 16px 20px;
+  }
+  .download-section a {
+    font-size: 24px;
+  }
+  .download-section a i {
+    font-size: 24px;
+  }
+  #promotion-container {
+    font-size: 24px;
+  }
+  #promotion-container img {
+    width: 80px;
+  }
+  #promotion-container #promote-download-link {
+    width: 45%;
+    float: left;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  #promotion-container #promote-wechat-account {
+    width: 45%;
+    padding-left: 30px;
+  }
+  #score-container {
+    margin: 20px;
+  }
+  #score-container #score-value-container {
+    padding: 80px 0px;
+  }
+  #score-container #score-value-container .title {
+    font-size: 32px;
+  }
+  #score-container #score-value-container #score-value {
+    font-size: 160px;
+    line-height: 1em;
+  }
+  #score-container #comment {
+    min-height: 160px;
+    padding: 40px 0px;
+    font-size: 32px;
+    line-height: 26px;
+  }
+  #score-container #remarks {
+    font-size: 24px;
+  }
+  #score-container #share {
+    padding: 12px 0px;
+    font-size: 32px;
+  }
+  #score-container #share img {
+    width: 50px;
+  }
+  #promote-link {
+    text-align: center;
+    margin: 20px;
+  }
+}
+/* iPad Tablet portrait one-col-vert */
+@media only screen and (width: 768px) {
+  .splash .game-name {
+    top: 80px;
+    font-size: 38px;
+  }
+  .splash .start {
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    line-height: 400px;
+    font-size: 80px;
+  }
+  #quiz-process {
+    top: 40px;
+    height: 40px;
+    margin: 0 30px;
+    box-shadow: 0 0 6px #aaa;
+  }
+  #quiz-process .bar {
+    line-height: 40px;
+    font-size: 18px;
+  }
+  #waiting-for-result {
+    font-size: 26px;
+    padding-top: 1640px;
+  }
+  #waiting-for-result p {
+    margin-bottom: 40px;
+  }
+  #waiting-for-result img {
+    margin-bottom: 20px;
+  }
+  #watermark {
+    top: 220px;
+    left: 50%;
+    width: 260px;
+    margin-left: -130px;
+  }
+  .definition {
+    margin: 120px 50px 160px;
+  }
+  .definition .word-name {
+    padding: 20px;
+    font-size: 60px;
+    line-height: 120px;
+  }
+  .definition label {
+    margin-bottom: 0;
+  }
+  .definition .word {
+    padding: 18px 40px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .definition .word .list {
+    font-size: 24px;
+  }
+  .download-section {
+    left: 50px;
+    right: 50px;
+    bottom: 50px;
+    padding: 16px 20px;
+  }
+  .download-section a {
+    font-size: 24px;
+  }
+  .download-section a i {
+    font-size: 24px;
+  }
+  #promotion-container {
+    font-size: 24px;
+  }
+  #promotion-container img {
+    width: 80px;
+  }
+  #promotion-container #promote-download-link {
+    width: 45%;
+    float: left;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+  #promotion-container #promote-wechat-account {
+    width: 45%;
+    padding-left: 30px;
+  }
+  #score-container {
+    margin: 20px;
+  }
+  #score-container #score-value-container {
+    padding: 80px 0px;
+  }
+  #score-container #score-value-container .title {
+    font-size: 32px;
+  }
+  #score-container #score-value-container #score-value {
+    font-size: 160px;
+    line-height: 1em;
+  }
+  #score-container #comment {
+    min-height: 160px;
+    padding: 40px 0px;
+    font-size: 32px;
+    line-height: 26px;
+  }
+  #score-container #remarks {
+    font-size: 24px;
+  }
+  #score-container #share {
+    padding: 12px 0px;
+    font-size: 32px;
+  }
+  #score-container #share img {
+    width: 50px;
+  }
+  #promote-link {
+    text-align: center;
+    margin: 20px;
+  }
+}
