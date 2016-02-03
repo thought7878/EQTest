@@ -136,3 +136,19 @@ body{
     transform: rotate(0);
     transition: all .5s ease-in;
 }
+
+/*分数*/
+.score-container{
+    display: none;
+    background-color: #51b884;
+    text-align: center;
+    padding: 140px 0px;
+    color: white;
+}
+.score-container .title{
+    font-size: 28px;
+}
+.score-container .score-value{
+    font-size: 80px;
+    line-height:2;
+}

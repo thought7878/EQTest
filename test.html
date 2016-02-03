@@ -46,183 +46,189 @@
     </div>
     <div class="test-container">
         <!-- 进度 -->
-        <div class="progress">
-            <div class="bar bar-success" id="correct" style="width: 9%;">4</div>
-            <div class="bar bar-danger" id="wrong" style="width: 8%;">4</div>
-            <div class="bar bar-undo" id="words-count" style="width: 83%;">41</div>
+        <div class="progress" id="quiz-process">
+            <div class="bar bar-success"></div>
+            <div class="bar bar-danger"></div>
+            <div class="bar bar-undo">9</div>
         </div>
         <!-- 问题列表 -->
         <div id="question-list">
-            <div class="question-item test-show definition" style="display:block;opacity:1;transform:translateY(0);" data-index="1" data-done="false">
+            <div class="question-item test-show definition" data-answer="c" style="display:block;opacity:1;transform:translateY(0);" data-index="1" data-done="false">
                 <div class="word-name">1、LV是哪个国家的奢侈品品牌？ </div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">美国</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">英国</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">法国</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">意大利</span>
                 </label>
             </div>
-            <div class="question-item hide definition" data-index="2" data-done="false">
+            <div class="question-item hide definition" data-answer="a" data-index="2" data-done="false">
                 <div class="word-name">2.一瓶酒上标注了XO，这是什么意思？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">特陈</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">波兰</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">发酵</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">优质</span>
                 </label>
             </div>
-            <div class="question-item definition hide" data-index="3" data-done="false">
+            <div class="question-item definition hide" data-answer="b" data-index="3" data-done="false">
                 <div class="word-name">3.你和一位朋友到一家五星级宾馆吃饭，你大约需要准备多少钱？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">50元</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">500元</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">5000元</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">50000元</span>
                 </label>
             </div>
-            <div class="question-item hide definition" data-index="4" data-done="false">
+            <div class="question-item hide definition" data-answer="d" data-index="4" data-done="false">
                 <div class="word-name">4.韩梅梅叫李华“叔叔”，韩梅梅可能是李华的_____？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">妹妹的同学</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">姐姐的男友</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">妈妈的领导</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">哥哥的老婆</span>
                 </label>
             </div>
-            <div class="question-item definition hide" data-index="5" data-done="false">
+            <div class="question-item definition hide" data-answer="d" data-index="5" data-done="false">
                 <div class="word-name">5.以下四个省份中，哪个省份到外地务工的人员最多？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">新疆</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">山东</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">福建</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">四川</span>
                 </label>
             </div>
-            <div class="question-item hide definition" data-index="6" data-done="false">
+            <div class="question-item hide definition" data-answer="b" data-index="6" data-done="false">
                 <div class="word-name">6.如果你想找一个地方坐下休息一会，以下哪个门店会是好的选择？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">CK</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">KFC</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">GUCCI</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">ARMANI</span>
                 </label>
             </div>
-            <div class="question-item definition hide" data-index="7" data-done="false">
+            <div class="question-item definition hide" data-answer="b" data-index="7" data-done="false">
                 <div class="word-name">7.西方的情人节是在哪一天？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">1.14</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">2.14</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">3.14</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">4.14</span>
                 </label>
             </div>
-            <div class="question-item hide definition" data-index="8" data-done="false">
+            <div class="question-item hide definition" data-answer="c" data-index="8" data-done="false">
                 <div class="word-name">8.一个有钱老板包养一个二奶，通常每个月需要多少钱？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">八十</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">八百</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">八千</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">八万</span>
                 </label>
             </div>
-            <div class="question-item definition hide" data-index="9" data-done="false">
+            <div class="question-item definition hide" data-answer="d" data-index="9" data-done="false">
                 <div class="word-name">9.住宾馆时，前台要求提供身份证件，以下哪些证件可以作为证明身份的证件被宾馆认可？</div>
-                <label class="answer-item word" value="13180" rank="1623" answer="1050">
+                <label class="answer-item word" value="a">
                     <span class="list">A.</span>
                     <span class="value">学位证</span>
                 </label>
-                <label class="answer-item word" value="7180" rank="1623" answer="1050">
+                <label class="answer-item word" value="b">
                     <span class="list">B.</span>
                     <span class="value">学生证</span>
                 </label>
-                <label class="answer-item word" value="1050" rank="1623" answer="1050">
+                <label class="answer-item word" value="c">
                     <span class="list">C.</span>
                     <span class="value">驾驶执照</span>
                 </label>
-                <label class="answer-item word" value="2982" rank="1623" answer="1050">
+                <label class="answer-item word" value="d">
                     <span class="list">D.</span>
                     <span class="value">因私护照</span>
                 </label>
+            </div>
+        </div>
+        <div class="score-container">
+            <h2 class="title">你的得分是</h2>
+            <div class="score-value">
+                
             </div>
         </div>
     </div>
