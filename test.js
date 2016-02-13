@@ -1,15 +1,68 @@
 var globalVar = {
-	totalCount: 9,
+	totalCount: 10,
 	correctCount: 0,
 	errorCount: 0,
+	score: 0,
 	isLast: function() {
 		return this.totalCount === this.correctCount + this.errorCount;
 	},
 	getScore: function() {
-		return Math.round(this.correctCount / this.totalCount * 100);
+		return this.score;
+		// return Math.round(this.correctCount / this.totalCount * 100);
 	}
 }
-
+var scoreObj = {
+	"1":{
+		"a":-20,
+		"b":-10,
+		"d":-10
+	},
+	"2":{
+		"a":-10,
+		"c":-10,
+		"d":-20
+	},
+	"3":{
+		"b":-10,
+		"c":-10,
+		"d":-20
+	},
+	"4":{
+		"b":-10,
+		"c":-10,
+		"d":-20
+	},
+	"5":{
+		"a":-10,
+		"b":-10,
+		"c":-20
+	},
+	"6":{
+		"a":-20,
+		"c":-10,
+		"d":-20
+	},
+	"7":{
+		"a":-20,
+		"b":-20,
+		"c":-10
+	},
+	"8":{
+		"a":-20,
+		"b":-10,
+		"d":-10
+	},
+	"9":{
+		"a":-20,
+		"b":-20,
+		"d":-20
+	},
+	"10":{
+		"a":-20,
+		"b":-20,
+		"c":-10
+	}
+}
 
 $(function() {
 	// 开始按钮
@@ -36,15 +89,23 @@ $(function() {
 
 	//点击答案
 	$("#question-list").delegate(".answer-item", "click", function() {
-
-		var answer = $(this).parents(".question-item").data("answer"); //答案
+		var questionItem$ = $(this).parents(".question-item");
+		var answer = questionItem$.data("answer"); //答案
 		var value = $(this).attr("value"); //回答
 		if (answer == value) { //答对了
 			$(this).css("background", "#d8eecf");
 			globalVar.correctCount++;
+			globalVar.score += 10;//计算分数
 		} else {
 			$(this).css("background", "#edd5d6");
 			globalVar.errorCount++;
+			var index = questionItem$.data("index");
+			globalVar.score += scoreObj[index][value];//计算分数
+		}
+		// 关闭当前语音
+		var audioObj = questionItem$.find("audio")[0];
+		if (!audioObj.ended) {//没结束
+			audioObj.pause();
 		}
 		// 进度
 		var correctProcess = Math.ceil(globalVar.correctCount / globalVar.totalCount * 100);

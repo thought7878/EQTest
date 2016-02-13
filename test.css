@@ -114,9 +114,15 @@ body{
     transform: translateY(0);
     transition: all 0.5s ease-in;
 }
-.test-tips{
+.test-title{
     padding-top: 40px;
     font-size: 28px;
+    color: white;
+    text-align: center;
+}
+.test-tips{
+    padding-top: 40px;
+    font-size: 20px;
     color: white;
     text-align: center;
 }
