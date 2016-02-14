@@ -128,6 +128,7 @@ $(function() {
 				currentQst$.css("display", "none");
 				$(".score-container .score-value").text("" + globalVar.getScore());
 				$(".score-container").fadeIn();
+				$(".two-code").fadeIn();
 			}, 500);
 		} else {
 			hideCurrentQst(currentQst$, nextQst$);

@@ -158,3 +158,8 @@ body{
     font-size: 80px;
     line-height:2;
 }
+.two-code{
+    display: none;
+    margin-top: 40px;
+    text-align: center;
+}
